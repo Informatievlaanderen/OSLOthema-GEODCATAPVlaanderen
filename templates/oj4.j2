@@ -442,6 +442,13 @@
                                                       {% endif %}
                                                    </td>
                                                    <td>
+						       {% if prop.GEODCATAP %}
+						       {% if prop.reuse.nl == "asis"   %}
+							<a href="{{ prop.GEODCATAP.nl }}">A</a>
+						       {% else %}
+							<a href="{{ prop.GEODCATAP.nl }}">E</a>
+						       {% endif %}
+						       {% else %}
 						       {% if prop.DCATAP %}
 						       {% if prop.reuse.nl == "asis"   %}
 							<a href="{{ prop.DCATAP.nl }}">A</a>
@@ -458,6 +465,7 @@
 						         {% else %}
 							  P
 						         {% endif %}
+						       {% endif %}
 						       {% endif %}
                                                    </td>
                                                 </tr>
