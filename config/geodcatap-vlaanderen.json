@@ -1,6 +1,6 @@
 [
 {
-  "name": "geodcatap-vlaanderen",
+  "name": "GEODCAT-AP-VL",
   "type": "ap",
   "eap": "OSLO-GEODCATAPVlaanderen.eap",
   "diagram": "OSLO-geodcatap",
