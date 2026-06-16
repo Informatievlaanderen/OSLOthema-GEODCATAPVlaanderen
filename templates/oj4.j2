@@ -496,23 +496,6 @@
                               {% endif %}
                            {% endfor %}
                         </div>
-                        {% block codelijsten2 %}
-                           <div class="vl-region vl-region--no-space-top">
-                              <h2 class="vl-title--h2">Codelijsten</h2>
-                              <p>De klassen, hieronder opgelijst, zijn de codelijsten die expliciet vermeld zijn als klasse in dit applicatieprofiel.
-                                 </p>
-                              {% for entity in data.classes %}
-                                 {% if entity.applicationProfileLabel[language] %}
-                                    {% set entitylabel = entity.applicationProfileLabel[language] %}
-                                 {% else %}
-                                    {% set entitylabel = "ERROR" %}
-                                 {% endif %}
-                                 {% if  entity.id == "http://www.w3.org/2004/02/skos/core#Concept" %}
-                                    {{ renderentity(entity, entitylabel) }}
-                                 {% endif %}
-                              {% endfor %}
-                           </div>
-                        {% endblock codelijsten2 %}
                         {% if data.dataTypes %}
                            <div class="vl-region vl-region--no-space-top">
                               <h2 class="vl-title--h2">Datatypes</h2>
