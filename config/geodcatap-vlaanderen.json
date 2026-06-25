@@ -2,7 +2,7 @@
 {
   "name": "GEODCAT-AP-VL",
   "type": "ap",
-  "eap": "OSLO-GEODCATAPVlaanderen.eap",
+  "eap": "GEODCAT.eap",
   "diagram": "OSLO-geodcatap",
   "template": "geodcatap-vlaanderen-ap.j2",
   "title": "GEODCAT-AP Vlaanderen",
